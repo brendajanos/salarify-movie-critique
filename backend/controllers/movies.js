@@ -1,8 +1,6 @@
 import { createRequire } from "module";
 const require = createRequire(import.meta.url);
-const data = require("../data.json")
-
-
+const data = require("../data.json");
 
 let movies = data;
 
@@ -17,9 +15,9 @@ export const getMovies = (req, res) => {
 };
 
 export const getMovie = (req, res) => {
-  const { name } = req.params;
+  const { id } = req.params;
 
-  const foundMovie = movies.find((movie) => movie.name === name);
+  const foundMovie = movies.find((movie) => movie.id === id);
   res.send(foundMovie);
 };
 
@@ -32,7 +30,8 @@ export const deleteMovie = (req, res) => {
 
 export const patchMovie = (req, res) => {
   const { id } = req.params;
-  const { name, director, year, stars, writers, review, ratings, imgUrl } = req.body;
+  const { name, director, year, stars, writers, review, ratings, imgUrl } =
+    req.body;
   const movie = movies.find((movie) => movie.id === id);
 
   if (name) {
