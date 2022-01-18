@@ -1,22 +1,22 @@
 import express from "express";
-import { createMovie, getMovies,getMovie,deleteMovie,patchMovie} from "../controllers/movies.js";
+import { createReview, getReviews,getReview,deleteReview,patchReview} from "../controllers/reviews.js";
 
 const router = express.Router();
 
 
 //create an endpoint to query movies, (name, year, image and the average rating)
-router.get("/",getMovies);
+router.get("/",getReviews);
 
 //create an endpoint to add movies, input data should be validated backend side!
-router.post("/", createMovie);
+router.post("/", createReview);
 
 //create an endpoint to fetch details by movie
-router.get("/:id",getMovie);
+router.get("/:id",getReview);
 
 //delete movies
-router.delete("/:id", deleteMovie);
+router.delete("/:id", deleteReview);
 
 //create and endpoint to update movies
-router.patch("/:id", patchMovie)
+router.patch("/:id", patchReview)
 
 export default router;
