@@ -1,21 +1,43 @@
 .App {
-  text-align: center;
-  background-color: black;
+    text-align: center;
+    background-color: black;
 }
 .App-header {
-  box-sizing: border-box;
-  width: 100%;
-  display: flex;
-  padding: 1em;
-  margin-bottom: 2em;
-  background-color: rgb(186,16,109);
-  color: #fff;
+    box-sizing: border-box;
+    width: 100%;
+    height: 60px;
+    display: flex;
+    position: relative;
+    padding: 1em;
+    margin-bottom: 2em;
+    background-color: rgb(186, 16, 109);
+    color: #fff;
 }
 
 .App-header-leftSection {
-  float: left;
+    position: absolute;
+    left: 0;
+    margin: 5px;
+    padding: 5px;
+    justify-content: space-between 5px;
 }
 
 .App-header-rightSection {
-  float:right;
+    position: absolute;
+    right: 0;
+    margin: 5px;
+    padding: 5px;
+}
+
+.Logo {
+  justify-content: space-between;
+
+}
+.HomeButton {
+  justify-content: space-between;
+
+}
+.Add {
+  margin-left: 5px;
+
 }

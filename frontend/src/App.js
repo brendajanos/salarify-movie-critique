@@ -5,19 +5,19 @@ function App() {
         <div className="App">
             <header className="App-header">
                 <div className="App-header-leftSection">
-                    <logo>Logo</logo>
-                    <homebutton>Home</homebutton>
-                    <addbutton>Add</addbutton>
+                    <logo className="Logo">Logo</logo>
+                    <homebutton className="HomeButton">Home</homebutton>
+                    <addbutton className="AddButton">Add</addbutton>
                 </div>
                 <div className="App-header-rightSection">
-                    <searchbar>Search 
-                      <button>Search</button>
+                    <searchbar className="SearchBar">Search 
+                      <button className="SearchButton">Search</button>
                     </searchbar>
                 </div>
             </header>
             <div className="App-centerArea">
-                <modal></modal>
-                <pagination></pagination>
+                <modal className="Modal"></modal>
+                <pagination className="Pagination"></pagination>
             </div>
         </div>
     )
