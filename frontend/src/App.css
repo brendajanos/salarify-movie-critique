@@ -1,3 +1,21 @@
 .App {
   text-align: center;
+  background-color: black;
+}
+.App-header {
+  box-sizing: border-box;
+  width: 100%;
+  display: flex;
+  padding: 1em;
+  margin-bottom: 2em;
+  background-color: rgb(186,16,109);
+  color: #fff;
+}
+
+.App-header-leftSection {
+  float: left;
+}
+
+.App-header-rightSection {
+  float:right;
 }
