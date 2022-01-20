@@ -1,4 +1,3 @@
-//import './App.css'
 import Navbar from './Components/Navbar/Navbar'
 import './styles/custom.scss'
 import ReviewCard from './Components/ReviewCard/ReviewCard'
